@@ -26,10 +26,10 @@ Write a function named `addExclamation` that takes an array of strings, and retu
 Use `forEach` to loop over the input array. Modify each string, and add the updated value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
-const addExclamation = (array) => {
+const addExclamation = (arr) => {
   // Solution code here...
   let local =  [];
-  array.forEach(val => {local.push(val + '!');});
+  arr.forEach(val => {local.push(val + '!');});
   return local;
 
 };
@@ -44,6 +44,9 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 
 const allUpperCase = (arr) => {
   // Solution code here...
+  let local = [];
+  arr.forEach(val => {local.push(val.toUpperCase());});
+  return local;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -58,10 +61,14 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 
 const greeting = (word) => {
   // Solution code here...
+  return word.toUpperCase() + '!';
 };
 
 const speaker = (words, callback) => {
   // Solution code here...
+  let local = [];
+  words.forEach(val => {local.push(callback(val));});
+  return local;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,10 +89,15 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  for (let i = 0; i < times; i++){
+    callback(num, arr);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
