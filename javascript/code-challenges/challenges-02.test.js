@@ -96,7 +96,7 @@ Write a function named charCode that, given an array of letters as an input, use
 Read the MDN documentation on String.charCodeAt() if necessary.
 
 For example: charCode(['h','i']) returns [104, 105].
------------------------------------------------------------------------------------------------- */
+------------------------------------------------------------------------------------------------- */
 
 const charCode = (arr) => {
   // Solution code here...
