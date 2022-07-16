@@ -125,11 +125,8 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
-
   return arr.reduce((acc,value)=>
     acc.concat(value.name),[]);
-
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -142,14 +139,11 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
-
   let revStr = [...str].reduce( function(acc,el){
     acc = `${el}${acc}`;
     return acc;
   }, '');
   return revStr;
-
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -157,54 +151,6 @@ CHALLENGE 7 - Stretch Goal
 
 Write a function named countNumberOfChildren that, given the array of characters, below, uses reduce to return the total number of children in the data set.
 ------------------------------------------------------------------------------------------------ */
-
-
-// const characters = [
-//   {
-//     name: 'Eddard',
-//     spouse: 'Catelyn',
-//     children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
-//     house: 'Stark',
-//   },
-//   {
-//     name: 'Jon',
-//     spouse: 'Lysa',
-//     children: ['Robin'],
-//     house: 'Arryn',
-//   },
-//   {
-//     name: 'Cersei',
-//     spouse: 'Robert',
-//     children: ['Joffrey', 'Myrcella', 'Tommen'],
-//     house: 'Lannister',
-//   },
-//   {
-//     name: 'Daenarys',
-//     spouse: 'Khal Drogo',
-//     children: ['Drogon', 'Rhaegal', 'Viserion'],
-//     house: 'Targaryen',
-//   },
-//   {
-//     name: 'Mace',
-//     spouse: 'Alerie',
-//     children: ['Margaery', 'Loras'],
-//     house: 'Tyrell',
-//   },
-//   {
-//     name: 'Sansa',
-//     spouse: 'Tyrion',
-//     house: 'Stark',
-//   },
-//   {
-//     name: 'Jon',
-//     spouse: null,
-//     house: 'Snow',
-//   },
-// ];
-
-// const countNumberOfChildren = (arr) => {
-//   // Solution code here...
-// };
 
 const characters = [
   {
@@ -253,7 +199,6 @@ const countNumberOfChildren = (arr) => {
   // Solution code here...
 };
 
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
@@ -262,15 +207,9 @@ Write a function that, given an array of numbers as input, uses reduce to calcul
 Hint: The accumulator should begin as { count: 0, sum: 0 }
 ------------------------------------------------------------------------------------------------ */
 
-
-// const calculateAverage = (arr) => {
-  // Solution code here...
-// };
-
 const calculateAverage = (arr) => {
   // Solution code here...
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -279,20 +218,6 @@ Write a function named countPrimeNumbers that, given an array elements as input,
 
 You are welcome to use the provided isPrime function.
 ------------------------------------------------------------------------------------------------ */
-
-
-// const isPrime = (value) => {
-//   for (let i = 2; i < value; i++) {
-//     if (value % i === 0) {
-//       return false;
-//     }
-//   }
-//   return value > 1;
-// };
-
-// const countPrimeNumbers = (arr) => {
-//   // Solution code here...
-// };
 
 const isPrime = (value) => {
   for (let i = 2; i < value; i++) {
@@ -307,7 +232,6 @@ const countPrimeNumbers = (arr) => {
   // Solution code here...
 };
 
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 10 - Stretch Goal
 
@@ -315,42 +239,6 @@ Write a function named extractState that, given the snorlaxData, below, uses red
 
 If the input array does not have a stat with that specific name, the function should return null.
 ------------------------------------------------------------------------------------------------ */
-
-
-// const snorlaxData = {
-//   stats: [
-//     {
-//       stat: {
-//         url: 'https://pokeapi.co/api/v2/stat/6/',
-//         name: 'speed',
-//       },
-//       effort: 5,
-//       baseStat: 30,
-//     },
-//     {
-//       stat: {
-//         url: 'https://pokeapi.co/api/v2/stat/5/',
-//         name: 'special-defense',
-//       },
-//       effort: 2,
-//       baseStat: 110,
-//     },
-//     {
-//       stat: {
-//         url: 'https://pokeapi.co/api/v2/stat/4/',
-//         name: 'special-attack',
-//       },
-//       effort: 9,
-//       baseStat: 65,
-//     },
-//   ],
-//   name: 'snorlax',
-//   weight: 4600,
-// };
-
-// const extractStat = (statName, arr) => {
-//   // Solution code here...
-// };
 
 const snorlaxData = {
   stats: [
@@ -387,7 +275,6 @@ const extractStat = (statName, arr) => {
   // Solution code here...
 };
 
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 11 - Stretch Goal
 
@@ -398,15 +285,9 @@ Write a function named extractChildren that, given the array of characters from 
 2) Then, uses reduce to return an array of all the children's names in the filtered array
 ------------------------------------------------------------------------------------------------ */
 
-
-// const extractChildren = (arr) => {
-//   // Solution code here...
-// };
-
 const extractChildren = (arr) => {
   // Solution code here...
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
