@@ -47,11 +47,12 @@ CHALLENGE 3
 Write a function named joinArray that takes an array and joins all of the elements together in one string on a space.
 ------------------------------------------------------------------------------------------------ */
 
-const joinArray = (arr) => {
+let joinArray = (arr) => {
   // Solution code here...
-  const joinArray = (arr) => {
-    return arr.join(' ');
-  };
+  let joined = arr.join(' ').toString();
+  let joinedString = `${joined}`;
+  return joinedString;
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
