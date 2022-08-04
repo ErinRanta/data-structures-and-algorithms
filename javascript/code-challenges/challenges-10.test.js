@@ -28,7 +28,18 @@ return: 23
 ------------------------------------------------------------------------------------------------ */
 const findMax = (matrix) => {
   // Solution code here...
+  let max = 0;
+  for(let i = 0; i < matrix.length; i++){
+    let arr = matrix[i];
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] > max) {
+        max = arr[i];
+      }
+    }
+  }
+  return max;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -46,7 +57,15 @@ return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
   // Solution code here...
+  let sum = 0;
+  matrix.forEach(element => {
+    element.forEach(int => {
+      sum = sum + int;
+    });
+  });
+  return sum;
 };
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -73,9 +92,18 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-
+  let cookieTotal=[]
+  for (let j = 0; j < stores[0].length; j++) {
+    let total = 0;
+    for (let i = 0; i < stores.length; i++) {
+      total += stores[i][j];
+    }
+    cookieTotal.push(total);
+  }
+  return cookieTotal;
 };
 
+//a developer friend named Ilana helped me with problem 4//
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -88,7 +116,11 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   // Solution code here...
+  let total = [];
+  hours.forEach((hour, index) => total.push({sales: `${data[index]} cookies`, time: hour}));
+  return total;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -113,6 +145,7 @@ const errands = [
 
 const howManyTreats = (arr) => {
   // Solution code here...
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
